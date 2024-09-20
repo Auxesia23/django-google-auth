@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block header %}
+    {% include "navbar.html" %}
+{% endblock header %}
+
+{% block body %}
+<div class="hero bg-base-100 min-h-screen">
+    <div class="hero-content flex-col lg:flex-row">
+        <div>
+          <h1 class="text-5xl font-bold">Welcome<br> {{data.name}}</h1>
+          <p class="py-6">
+              In a sun-dappled realm where whiskers dance and purrs weave tales,<br> I discovered a world of 
+              cats, each a silent poet with eyes like lanterns, <br>guiding me through the shadows of their enchanting domain.
+          </p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+    </div>
+  </div>
+{% endblock body %}
+
